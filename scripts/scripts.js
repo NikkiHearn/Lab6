@@ -36,7 +36,7 @@ console.log(Duration);
 
 function recalculate() {
     let CostLabel = document.getElementById("calculated-cost");
-    let Cost = CostLabel
+    let Cost = CostLabel;
     if (ModelName == ("Model XYZ")) {
         Cost = Duration * 100;
         CostLabel.innerHTML = Cost;
@@ -68,13 +68,13 @@ function changeModel() {
     let ModelText = document.getElementById("model-text");
     if (ModelName == "Model XYZ") {
         ModelText.innerHTML = ("Model CRPG");
-        ModelName = "Model CRPG"
+        ModelName = "Model CRPG";
         recalculate();
         
     }
         
     else {
-        ModelName = "Model XYZ"
+        ModelName = "Model XYZ";
         ModelText.innerHTML = ("Model XYZ");
         recalculate();
         
